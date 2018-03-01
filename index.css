@@ -1,0 +1,74 @@
+body {
+    background-color: rgb(255, 255, 143);
+}
+body{
+    text-align:center;
+}
+body{
+    border-style: solid;
+    border-color: black;
+    border-width: 10px;
+}
+p{
+    background-color: white;
+}
+img {
+    display: block;
+    margin: auto;
+    width: 15%;
+}
+h1{
+    color:navy;
+    background-color:rgb(111, 111, 111);
+    margin-left: 250px;
+    margin-right: 250px;
+    border-style: solid;
+    border-color: rgb(0, 111, 111);
+    border-width: 5px;
+    
+}
+h2{
+    color: #5a2d0c;
+    background-color:rgb(111, 111, 111);
+    margin-left: 250px;
+    margin-right: 250px;
+    border-style: solid;
+    border-color: rgb(0, 111, 111);
+    border-width: 5px;
+}
+h3{
+    color:rgb(0, 171, 155);
+    background-color:rgb(111, 111, 111);
+    margin-left: 250px;
+    margin-right: 250px;
+    border-style: solid;
+    border-color: rgb(0, 111, 111);
+    border-width: 5px;
+}
+h4{
+    color:rgb(255, 255, 255);
+    background-color:rgb(111, 111, 111);
+    margin-left: 250px;
+    margin-right: 250px;
+    border-style: solid;
+    border-color: rgb(0, 111, 111);
+    border-width: 5px;
+}
+p{
+    border-style: solid;
+    border-color: black;
+    border-width: 5px;
+}
+p{
+    margin-left: 250px;
+    margin-right: 250px;
+}
+.center{
+    width:250px;
+    margin:0 auto;
+    text-align:left;
+    background-color:rgb(111, 111, 111);
+}
+easteregg{
+    visibility: hidden;
+}

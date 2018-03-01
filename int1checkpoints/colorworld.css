@@ -1,0 +1,39 @@
+body {
+    background-color: grey;
+}
+body{
+    text-align:center;
+}
+body{
+    border-style: solid;
+    border-color: black;
+    border-width: 10px;
+}
+p{
+    background-color: white
+}
+img {
+    display: block;
+    margin: auto;
+    width: 15%;
+}
+h1{
+    color:navy;
+}
+h2{
+    color: #5a2d0c;
+}
+p{
+    border-style: solid;
+    border-color: black;
+    border-width: 5px;
+}
+p{
+    margin-left: 100px;
+    margin-right: 100px;
+}
+.center{
+    width:200px;
+    margin:0 auto;
+    text-align:left;
+}

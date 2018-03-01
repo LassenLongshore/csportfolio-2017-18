@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Planner</title>
+    <link rel="stylesheet" href="index.css" type="text/css" />
+    <link rel="stylesheet" href="navbar.css" type="text/css" />
+<style>
+table, th, td {
+    border: 1px solid black;
+}
+</style>
+</head>
+<body>
+    <!-- creates the navigation bar -->
+<ul id="navbar">
+    <li><a href="index.html"> About Me</a></li>
+    <li><a href="aboutmehowto.html"> How To - About Me</a></li>
+    <li><a href="genart.html">Generative Art</a></li>
+    <li><a href="arthowto.html">Gen Art How-To</a></li>
+    <li><a href="probpage.html">A Weekly Planner</a></li>
+    <li><a href="ppagehowto.html">How I Made The Planner</a></li>
+</ul>
+    <center>
+    <!-- instructions -->
+    <h2>Customizable weekly planner</h2>
+    <p>This a customizable weekly planner that allows you to input/change the dates of the week and then choose a specific date to put to-do items into.<br>Caution: WIP; if you reload the page, all data will be lost</p>
+    <!-- week input box and button -->
+    <input id="weekInput">
+    <button id="weekInputButton">Update week</button><br>
+    <!-- creates day input box and position and day selectors -->
+    <input id="dayInput">
+    <select name="typeSelector" id="typeSelector">
+        <option value="monday">Monday</option>
+        <option value="tuesday">Tuesday</option>
+        <option value="wednesday">Wednesday</option>
+        <option value="thursday">Thursday</option>
+        <option value="friday">Friday</option>
+        <option value="saturday">Saturday</option>
+        <option value="sunday">Sunday</option>
+    </select>
+    <select id="position">
+        <option value="1">1</option>
+        <option value="2">2</option>
+        <option value="3">3</option>
+        <option value="4">4</option>
+        <option value="5">5</option>
+        <option value="6">6</option>
+    </select>
+    <!-- creates day input button -->
+    <button id="dayInputButton">Update day</button><br>
+    <!-- creates week title -->
+    <div id ="weekTitle"><h2>Week Title</h2></div>
+    <!-- creates calendar -->
+    <table>
+    <tr>
+        <th>Monday</th>
+        <th>Tuesday</th>
+        <th>Wednesday</th>
+        <th>Thursday</th>
+        <th>Friday</th>
+        <th>Saturday</th>
+        <th>Sunday</th>
+    </tr>
+    <tr>
+        <td id="m1"></td>
+        <td id="t1"></td>
+        <td id="w1"></td>
+        <td id="th1"></td>
+        <td id="f1"></td>
+        <td id="sa1"></td>
+        <td id="su1"></td>
+    </tr>
+    <tr>
+        <td id="m2"></td>
+        <td id="t2"></td>
+        <td id="w2"></td>
+        <td id="th2"></td>
+        <td id="f2"></td>
+        <td id="sa2"></td>
+        <td id="su2"></td>
+    </tr>
+    <tr>
+        <td id="m3"></td>
+        <td id="t3"></td>
+        <td id="w3"></td>
+        <td id="th3"></td>
+        <td id="f3"></td>
+        <td id="sa3"></td>
+        <td id="su3"></td>
+    </tr>
+    <tr>
+        <td id="m4"></td>
+        <td id="t4"></td>
+        <td id="w4"></td>
+        <td id="th4"></td>
+        <td id="f4"></td>
+        <td id="sa4"></td>
+        <td id="su4"></td>
+    </tr>
+    <tr>
+        <td id="m5"></td>
+        <td id="t5"></td>
+        <td id="w5"></td>
+        <td id="th5"></td>
+        <td id="f5"></td>
+        <td id="sa5"></td>
+        <td id="su5"></td>
+    </tr>
+    <tr>
+        <td id="m6"></td>
+        <td id="t6"></td>
+        <td id="w6"></td>
+        <td id="th6"></td>
+        <td id="f6"></td>
+        <td id="sa6"></td>
+        <td id="su6"></td>
+    </tr>
+    </table>
+</center>   
+<script src="probpage.js"></script>
+</body>
+</html>
