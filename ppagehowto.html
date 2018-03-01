@@ -32,6 +32,43 @@ if the week I wanted to put in the planner was the week of the 1st, I'd put "Wee
 change the week title to "Week of 2/1". The actual calendar bit is a little different. The calendar has 7 days (Monday through Sunday) and each
 day has 6 slots that you can put items in to. To do this, you must first select the desired day and slot from the provided selectors. Then you can
 put in your to do item in to the text box and then click the Update Day button.</p>
+<h1>Specific pieces of code & how they work</h1>
+<p>
+CODE EXAMPLE 1<br>
+//checks if the day input button is clicked<br>
+dayInputButton.addEventListener("click", function(){<br>
+    //checks the selections for the day of the week and position of the calendar<br>
+    if (typeSelector.value === "monday" && position.value === "1"){<br>
+        //then changes the position of that cell in the calendar to whatever is in the input box<br>
+        m1.innerHTML = dayInput.value;<br>
+    }<br>
+    if (typeSelector.value === "monday" && position.value === "2"){<br>
+        m2.innerHTML = dayInput.value;<br>
+    }<br>
+This is part of the block of code that checks which day and which cell you chose, and it changes the text of that particular selection to whatever 
+you put in the text box. The function itself is actually much longer, because there are seven days with six cells each, for a total of 42 cells. 
+Unfortunately, there is no way to do it except create an if-statement for each and every cell in the calendar.<br>
+CODE EXAMPLE 2<br>
+&lt;select name=&quot;typeSelector&quot; id=&quot;typeSelector&quot;&gt;<br>
+        &lt;option value=&quot;monday&quot;&gt;Monday&lt;/option&gt;<br>
+        &lt;option value=&quot;tuesday&quot;&gt;Tuesday&lt;/option&gt;<br>
+        &lt;option value=&quot;wednesday&quot;&gt;Wednesday&lt;/option&gt;<br>
+        &lt;option value=&quot;thursday&quot;&gt;Thursday&lt;/option&gt;<br>
+        &lt;option value=&quot;friday&quot;&gt;Friday&lt;/option&gt;<br>
+        &lt;option value=&quot;saturday&quot;&gt;Saturday&lt;/option&gt;<br>
+        &lt;option value=&quot;sunday&quot;&gt;Sunday&lt;/option&gt;<br>
+    &lt;/select&gt;<br>
+    &lt;select id=&quot;position&quot;&gt;<br>
+        &lt;option value=&quot;1&quot;&gt;1&lt;/option&gt;<br>
+        &lt;option value=&quot;2&quot;&gt;2&lt;/option&gt;<br>
+        &lt;option value=&quot;3&quot;&gt;3&lt;/option&gt;<br>
+        &lt;option value=&quot;4&quot;&gt;4&lt;/option&gt;<br>
+        &lt;option value=&quot;5&quot;&gt;5&lt;/option&gt;<br>
+        &lt;option value=&quot;6&quot;&gt;6&lt;/option&gt;<br>
+    &lt;/select&gt;<br>
+These are the blocks of code that create the selectors for the day and position. The first block creates the selector for the day of the week, and 
+the second block creates the selector for the cell number.
+</p>
 <h1>Some choices I made</h1>
 <p>Some choices I had to make were what to make, how customizable to make it, and what colors to make it. I chose to make what I made because I had
 done something similar in a previous interval and I drew inspiration from that. I decided on how customizable to make it by considering all of the
@@ -43,7 +80,8 @@ websites, and I had never really thought about how I interacted with them, like 
 happen in response. Over the course of this project, I came to realize that interactions were simply inputs and outputs working together. For 
 example, click the week input button, and the week title changes.</p>
 <h1>If I had more time</h1>
-<p>If I had more time, I would make it so that instead of just six cells </p>
+<p>If I had more time, I would make it so that instead of just six cells, it would expand to meet the needs of the user. I would also add a "Clear 
+All" button so that it is easy to start over with a new calendar.</p>
 
 </body>
 </html>
